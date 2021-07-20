@@ -1,0 +1,37 @@
+.container {
+  width: 350px;
+
+  img {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+.content {
+  background: var(--white);
+  padding: 1.25rem;
+
+  strong {
+    font-size: 1.25rem;
+    color: var(--blue-900);  
+  }
+
+  p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray-100);
+    margin-top: 0.5rem;
+  }
+
+  .details {
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      img {
+        margin-right: 0.375rem;
+      }
+    }
+  }
+}

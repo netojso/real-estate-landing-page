@@ -1,0 +1,147 @@
+
+
+.banner {
+  background: var(--blue-50);
+}
+
+.bannerContent {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-top: 2.375rem;
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.875rem;
+
+  section {
+    max-width: 550px;
+
+    h1 {
+      margin: 0.5rem auto 1.875rem;
+      font-size: 4rem;
+      line-height: 125%;
+      color: var(--blue-900);
+    }
+
+    p {
+      font-size: 1.125rem;
+      font-weight: 400;
+      color: var(--gray-400);
+    }
+
+    button {
+      margin-top: 2.5rem; 
+    }
+
+  }
+
+  img {
+    height: 500px;
+  }
+}
+
+
+.clients {
+  max-width: 1120px;
+  margin: 6.875rem auto;
+}
+
+.clientsInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.875rem;
+
+  img + img, p:last-child {
+    margin-left: auto;
+  }
+}
+
+.companies {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 4.375rem;
+}
+
+.guide {
+  max-width: 685px;
+  margin: 8rem auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  hr {
+    width: 2.5rem;
+    border: 1px solid var(--blue-900);
+    border-radius: 0.75rem;
+  }
+
+  h3 {
+    color: var(--blue-900);
+    font-size: 2.15rem;
+    font-weight: 500;
+    margin-top: 0.625rem;
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 460px;
+    color: var(--gray-300);
+    font-weight: 300;
+
+    margin-top: 1.25rem;
+  }
+
+  .steps {
+    width: 100%;
+    margin-top: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  button {
+    margin-top: 3rem;
+  }
+}
+
+.properties {
+  background: var(--blue-50);
+  padding: 6.875rem 0;
+}
+
+.propertiesContent {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  h3 {
+    color: var(--blue-900);
+    font-size: 2.15rem;
+    font-weight: 500; 
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 460px;
+    color: var(--gray-300);
+    font-weight: 300;
+
+    margin-top: 1rem;
+  }
+
+  .cards {
+    margin-top: 4.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

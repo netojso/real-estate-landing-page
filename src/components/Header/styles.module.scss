@@ -1,0 +1,43 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 4rem;
+  }
+} 
+
+.links {
+  display: flex;
+  list-style: none;
+  
+  li {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--gray-600);
+
+    & + li {
+      margin-left: 1.875rem;
+    }
+  }
+}
+
+.actions {
+  margin-left: auto;
+
+  button {
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: var(--blue-800);
+
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  button:first-of-type {
+    color: var(--blue-800);
+    margin-right: 1rem;
+    background: transparent;
+  }
+}
