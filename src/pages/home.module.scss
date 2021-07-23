@@ -37,7 +37,7 @@
   }
 
   img {
-    height: 500px;
+    width: 470px;
   }
 
   @media (max-width: 700px) {
@@ -62,7 +62,7 @@
     }
 
     img {
-      margin-top: -60px;
+      margin-top: -50px;
       width: 350px;
     }
   }
@@ -113,6 +113,10 @@
   @media (max-width: 700px) {
     overflow-y: auto;
     column-gap: 50px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
@@ -219,6 +223,9 @@
       overflow-y: auto;
       column-gap: 50px;
     }
+    .cards::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
@@ -270,7 +277,7 @@
 
       img {
         margin-top: 2rem;
-        width: 300px;
+        width: 350px;
       }
 
       & > div {
