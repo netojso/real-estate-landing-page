@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+
 import Button from '../components/Button'
 import ExplanationItem from '../components/ExplanationItem'
 import { Header } from '../components/Header'
@@ -102,6 +104,82 @@ export default function Home() {
               <PropertyCard key={key} {...props} />
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className={styles.statistics}>
+        <div className={styles.statisticsInfo}>
+          <img src="/images/statistics.png" alt="Statistics" />
+          <div>
+            <hr />
+            <h3>{"You've found a neighborhood you love"}</h3>
+            <p>When you own a home, you’re committing to living in one location for a while. In a recent Trulia survey,
+              we found that five out of six respondents said finding the right neighborhood </p>
+          </div>
+        </div>
+        <div className={styles.statisticsNumbers}>
+          <div>
+            <strong>2,500</strong>
+            <p>Homes For Sale</p>
+          </div>
+          <div>
+            <strong>5,000+</strong>
+            <p>Homes Recently Sold</p>
+          </div>
+          <div>
+            <strong>170+</strong>
+            <p>Price Reduced</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.action}>
+        <div>
+          <strong>Featured Properties</strong>
+          <p>{"Everything you need to know when you're looking"}</p>
+          <Button text='Get Started Now' color='#FFF'/>
+        </div>
+
+        <img src="/images/phone.png" alt="Phone" />
+      </div>
+
+      <div className={styles.footer}>
+        <div className={styles.links}>
+          <ul>
+            <li>Product</li>
+            <li>Listing</li>
+            <li>Property</li>
+            <li>Agents</li>
+            <li>Blog</li>
+          </ul>
+          <ul>
+            <li>Resources</li>
+            <li>Our Homes</li>
+            <li>Member Stories</li>
+            <li>Video</li>
+            <li>Free trial</li>
+          </ul>
+          <ul>
+            <li>Company</li>
+            <li>Partnerships</li>
+            <li>Terms of use</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+          </ul>
+
+          <div>
+            <strong>Get in touch</strong>
+            <p>{"You'll find your next home, in any style you prefer"}</p>
+            <div>
+              <FaFacebookF />
+              <FaInstagram />
+              <FaLinkedinIn />
+            </div>
+          </div>    
+        </div>
+        <div className={styles.copyRight}>
+          <img src="/images/logo.svg" alt="Logo" />
+          <p>Copyright 2020.com, All rights reserved.</p>
         </div>
       </div>
     </div>
