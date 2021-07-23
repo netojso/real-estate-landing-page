@@ -4,6 +4,7 @@
 
 .bannerContent {
   max-width: 1120px;
+  padding: 0 2rem;
   margin: 0 auto;
   padding-top: 2.375rem;
 }
@@ -33,17 +34,44 @@
     button {
       margin-top: 2.5rem; 
     }
-
   }
 
   img {
     height: 500px;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+
+    section {
+      max-width: unset;
+      margin-top: 2rem;
+
+      h1 {
+        font-size: 2rem;
+        margin: 1rem 0;;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        float: right; 
+      }
+    }
+
+    img {
+      margin-top: -60px;
+      width: 350px;
+    }
   }
 }
 
 
 .clients {
   max-width: 1120px;
+  padding: 0 2rem;
   margin: 6.875rem auto;
 }
 
@@ -55,6 +83,23 @@
   img + img, p:last-child {
     margin-left: auto;
   }
+
+  p {
+    color: var(--gray-300);
+  }
+
+  @media (max-width: 700px) {
+    row-gap: 1rem;
+
+    p:first-of-type {
+      color: transparent;
+    }
+
+    p:last-of-type {
+      text-align: right;
+      width: 200px;
+    }
+  }
 }
 
 .companies {
@@ -64,10 +109,16 @@
   justify-content: space-between;
 
   margin-top: 4.375rem;
+
+  @media (max-width: 700px) {
+    overflow-y: auto;
+    column-gap: 50px;
+  }
 }
 
 .guide {
   max-width: 685px;
+  padding: 0 2rem;
   margin: 8rem auto;
 
   display: flex;
@@ -79,7 +130,7 @@
 
   hr {
     width: 2.5rem;
-    border: 1px solid var(--blue-900);
+    border: 2px solid var(--blue-900);
     border-radius: 0.75rem;
   }
 
@@ -110,11 +161,24 @@
   button {
     margin-top: 3rem;
   }
+
+  @media (max-width: 700px) {
+    max-width: unset;
+
+    h3 {
+      font-size: 1.875rem;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 300px;
+    }
+  }
 }
 
 .properties {
   background: var(--blue-50);
-  padding: 6.875rem 0;
+  padding: 4rem 2rem;
 }
 
 .propertiesContent {
@@ -140,12 +204,27 @@
     margin-top: 4.25rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+  }
+
+  @media (max-width: 700px) {
+    h3 {
+      font-size: 1.875rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+    .cards {
+      overflow-y: auto;
+      column-gap: 50px;
+    }
   }
 }
 
 .statistics {
   max-width: 1120px;
+  padding: 0 2rem;
   margin: 6.175rem auto;
 
   display: flex;
@@ -185,6 +264,28 @@
         margin-top: 1rem;
       }
     }
+
+    @media (max-width: 700px) {
+      flex-direction: column-reverse;
+
+      img {
+        margin-top: 2rem;
+        width: 300px;
+      }
+
+      & > div {
+        margin-left: 0;
+
+        h3 {
+          font-size: 1.875rem;
+        }
+    
+        p {
+          font-size: 1rem;
+          line-height: 26px;
+        }
+      }
+    }
   }
 
   .statisticsNumbers {
@@ -207,8 +308,15 @@
 
       p {
         font-size: 1.125rem;
+        font-weight: 300;
         color: var(--gray-300);
       }
+    }
+
+    @media(max-width: 700px) {
+      margin-top: 4rem;
+      flex-direction: column;
+      row-gap: 50px;
     }
   }
 }
@@ -238,7 +346,7 @@
       font-weight: 300;
       color: var(--white);
 
-      margin: 1rem auto 1.25rem;
+      margin: 1.5rem auto 2rem;
     }
 
     button {
@@ -249,10 +357,30 @@
   img {
     margin-right: 5rem;
   }
+
+  @media (max-width: 700px) {
+    border-radius: 0px;
+    padding: 0 1rem;
+
+    & > div {
+      strong {
+        font-size: 2rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+    }
+    img {
+      margin-right: 0px;
+      height: 300px;
+    }
+  }
 }
 
 .footer {
   max-width: 1120px;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 
@@ -272,6 +400,7 @@
     li + li {
       margin-bottom: 0.875rem;
       font-weight: 300;
+      color: var(--gray-400);
     }
   }
 
@@ -284,6 +413,11 @@
       width: 250px;
       margin-top: 2.5rem;
       font-weight: 300;
+      color: var(--gray-400);
+      
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
 
     div {
@@ -291,6 +425,12 @@
       width: 80px;
       display: flex;
       justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 700px) {
+    & > div {
+      display: none;
     }
   }
 }
@@ -304,5 +444,20 @@
   p {
     font-weight: 300;
     color: var(--gray-100);
+  }
+
+  @media (max-width: 700px) {
+    margin: 3rem auto 1rem;
+    flex-direction: column;
+    row-gap: 30px;
+
+    img {
+      align-self: flex-start;
+      width: 80px;
+    }
+
+    p {
+      font-size: 0.875rem;
+    }
   }
 }

@@ -4,12 +4,20 @@
 
   img {
     margin-right: 4rem;
+
+    @media (max-width: 700px) {
+      width: 80px;
+    }
   }
 } 
 
 .links {
   display: flex;
   list-style: none;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
   
   li {
     font-size: 0.875rem;
@@ -24,6 +32,10 @@
 
 .actions {
   margin-left: auto;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 
   button {
     border-radius: 0.5rem;

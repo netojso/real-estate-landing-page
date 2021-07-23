@@ -48,7 +48,7 @@ export default function Home() {
               <p>Welcome to Besnik Agency</p>
               <h1>{`Discover a place you'll love to live.`}</h1>
               <p>Get the best real estate deals first,
-              before they hit the mass market! HOT FORECLOSURE DEALS with 
+              before they hit the mass market! Hot foreclosure deals with 
               one simple search</p>
               <Button text="More about us" color="#000339"/>
             </section>
